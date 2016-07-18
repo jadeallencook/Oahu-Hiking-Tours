@@ -1,0 +1,87 @@
+/* 
+    Oahu Hiking Tours 2016
+    Coded by Jade Allen Cook
+
+    Color Scheme
+    Blue #0B486B
+    Green #77AB59
+    Orange #FF5921
+*/
+
+html, body {
+    margin: 0px;
+    padding: 0px 15px;;
+    height: 100%;
+    width: 100%;
+    background-color: #0B486B;
+}
+
+div.container {
+    background-color: #fff;
+    border: solid #FF5921 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
+
+div.container div.row {
+    border-bottom: solid thin #eee;
+}
+
+div#hikes div.column {
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+div#hikes div.column:hover {
+    background-color: #eee;
+}
+
+div#hikes div.column:nth-child(n+2) {
+    border-left: solid thin #eee;
+}
+
+div#banner {
+    text-align: center;
+    line-height: 0px;
+    padding: 15px 0px;
+}
+
+div#banner h1 {
+    margin-bottom: 10px;
+}
+
+div#banner p {
+    margin-bottom: 15px;
+}
+
+div#footer {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+div#footer span {
+    width: 100%;
+    font-size: 0.75em;
+    text-align: center;
+    display: block;
+}
+
+div#app div {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+div#app div button {
+    margin-top: 15px;
+}
+
+div#app div input {
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+}

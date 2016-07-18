@@ -1,0 +1,67 @@
+{
+    haiku: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, diamond: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, crouching: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, coco: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, makapuu: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, waimono: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, manana: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, lanipo: {
+        cost: 100,
+        miles: 16,
+        difficulty: 10,
+        wet: true,
+        elevation: 6000,
+        location: 'Honolulu',
+        hours: 10
+    }, 
+}
