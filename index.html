@@ -1,75 +1,958 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <!-- Document Title -->
-    <title>Oahu Hiking Tours - Best Hikes In Oahu</title>
-    <!-- Base URL to use for all relative URLs contained within the document -->
-    <base href="">
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/milligram.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <!-- Javascript -->
-    <script src="assets/js/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!--|Title of Site|-->
+  <title>Imply - Responsive Startup Landing Page</title>
+
+  <!--|Google Font(Open Sans)|-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <!--|Google Font(Playfair Display)|-->
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!--|Font Icon(Ionicons)|-->
+  <link href='assets/css/ionicons.css' rel='stylesheet' type='text/css'>
+  <!--|Magnific Popup|-->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!--|Owl Carousel|-->
+  <link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+  <!--|Bootstrap|-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!--|Site Stylesheet|-->
+  <!--//Note: If you want to change color, just uncomment the commented stylesheet link and comment the uncommented link -->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css"> <!--//Default Color(Red)-->
+  <!--<link href="assets/css/style_blue.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="assets/css/style_cyan.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="assets/css/style_green.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="assets/css/style_orange.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="assets/css/style_purple.css" rel="stylesheet" type="text/css">-->
+
+  <!--|Favicon|-->
+  <link rel="icon" href="assets/images/favicon.ico">
+  <!-- Touch Icons -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="row" id="hikes">
-            <div class="column">
-                Haiku Stairs
-            </div>
-            <div class="column">
-                Diamond Head
-            </div>
-            <div class="column">
-                Crouching Lion
-            </div>
-            <div class="column">
-                Coco Head
-            </div>
-        </div>
-
-        <div class="row" id="banner">
-            <div class="column">
-                <h1>Oahu <b>Hiking Tours</b></h1>
-                <p>Come join us on some of the best hikes in Oahu!</p>
-            </div>
-        </div>
-        
-        <div class="row" id="app">
-        </div>
-        
-        <div class="row" id="hikes">
-            <div class="column">
-                Makapuu Ridge
-            </div>
-            <div class="column">
-                Waimono Ridge
-            </div>
-            <div class="column">
-                Manana Trail
-            </div>
-            <div class="column">
-                Lanipo
-            </div>
-        </div>
-
-        <div class="row" id="footer">
-            <div class="column">
-                <span><b>Oahu Hiking Tours</b> Copyright 2016</span>
-                <span><b>Website Coded by</b> Jade Allen Cook</span>
-            </div>
-        </div>
-
+<!--|Preloader|-->
+<div class="preloader">
+  <div class="preloader-inner">
+    <div>
+      <div></div>
     </div>
+    <span class="fp-meta">loading...</span>
+  </div>
+</div> <!--|End Preloader|-->
+
+<!--||Dot Nav||-->
+<div class="dot-nav scrollspy">
+  <ul class="nav">
+    <li class="active"><a href="#header">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#plans">Plans</a></li>
+    <li><a href="#review">Reviews</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#faqs">FAQ</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div> <!--|End Dot Nav|-->
+
+<!--||Off Canvas||-->
+<div class="off-canvas">
+  <div class="off-canvas-inner">
+    <div class="sidebar-logo"><img src="assets/images/logo_light.png" alt=""></div>
+
+    <div class="fp-navbar scrollspy">
+      <ul class="nav">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#review">Reviews</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faqs">FAQ</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="social-links brand-color">
+      <p>Follow Us</p>
+      <a class="facebook" href="#"><i class="ion-social-facebook"></i></a>
+      <a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
+      <a class="g-plus" href="#"><i class="ion-social-googleplus"></i></a>
+      <a class="instagram" href="#"><i class="ion-social-instagram"></i></a>
+    </div>
+  </div>
+  <a class="fp-close" href="#"><i class="ion-close"></i></a>
+</div> <!--||End Off Canvas||-->
+
+<div class="wrapper">
+  <!--|Overlay|-->
+  <div class="canvas-overlay"></div> <!--|End Overlay|-->
+
+  <!--|===================================================================
+  |Top Bar
+  |=======================================================================|-->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-logo">
+        <a href="index.html">
+          <img class="logo-light" src="assets/images/logo_light.png" alt="">
+          <img class="logo-dark" src="assets/images/logo_dark.png" alt="">
+        </a>
+      </div>
+
+      <div class="pull-right">
+      <div class="sign-wrap">
+        <a class="sign-btn" href="#"><i class="ion-person"></i></a>
+
+        <span class="sign-area">
+          <a class="fp-login" href="#"><i class="ion-log-in"></i> Login</a>
+          <a class="fp-signup" href="#"><i class="ion-person-add"></i> Register</a>
+        </span>
+      </div>
+        <a class="toggle-btn" href="#"><i class="ion-navicon"></i></a>
+      </div>
+    </div>
+  </div> <!--||End Top Bar||-->
+
+  <!--|===================================================================
+  |Header
+  |=======================================================================|-->
+  <header id="header" class="fp-header overlay-black">
+    <div class="overlay-inner">
+      <div class="header-content">
+        <div class="container">
+          <h1 class="head-title"><span>A creative way to</span> Promote Your Product</h1>
+
+          <div class="watch-video">
+            <a class="play-btn" href="https://vimeo.com/channels/staffpicks/146064760"><i class="ion-ios-play"></i></a>
+            <span class="fp-meta">Watch the Video</span>
+          </div>
+
+          <div class="btn-panel">
+            <p>Present your product with our beautiful template</p>
+            <a class="btn btn-lg btn-primary" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--|Animated Mouse Icon|-->
+    <span class="down-icon ion-mouse"></span>
+  </header> <!--||End Header||-->
+
+  <!--|===================================================================
+  |Clients
+  |=======================================================================|-->
+  <div class="clients">
+    <div class="container">
+      <div class="client-wrapper">
+        <a class="client" href="#"><img src="assets/images/clients/logo01.png" alt=""></a>
+        <a class="client" href="#"><img src="assets/images/clients/logo02.png" alt=""></a>
+        <a class="client" href="#"><img src="assets/images/clients/logo03.png" alt=""></a>
+        <a class="client" href="#"><img src="assets/images/clients/logo04.png" alt=""></a>
+      </div>
+    </div>
+  </div> <!--||End Clients||-->
+
+  <!--|===================================================================
+  |Features
+  |=======================================================================|-->
+  <div id="features">
+    <!--|Promo Section|-->
+    <div class="promo-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="promo-text">
+              <hr class="fp-hr">
+              <p class="highlight-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Phasellus a nisi tincidunt, mattis risus nec, elementum magna. Duis vestibulum tellus at ultrices commodo.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="block-image">
+              <img src="assets/images/mackbook01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--|Promo Section|-->
+
+    <section class="section section-bg">
+      <div class="container">
+        <!--|Section Header|-->
+        <header class="section-header align-center">
+          <div class="row">
+            <div class="col-md-6 block-center">
+              <h2 class="section-title">Key <span>Features</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </header> <!--|End Section Header|-->
+
+        <div class="row">
+          <div class="col-md-3">
+            <!--|Text Box|-->
+            <div class="text-box">
+              <i class="fp-icon ion-ios-albums-outline"></i>
+
+              <div class="text">
+                <h4 class="title">Smart Responsive</h4>
+                <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+              </div>
+            </div> <!--|End Text Box|-->
+          </div>
+
+          <div class="col-md-3">
+            <!--|Text Box|-->
+            <div class="text-box">
+              <i class="fp-icon ion-ios-paperplane-outline"></i>
+
+              <div class="text">
+                <h4 class="title">Boost Your Item</h4>
+                <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+              </div>
+            </div> <!--|End Text Box|-->
+          </div>
+
+          <div class="col-md-3">
+            <!--|Text Box|-->
+            <div class="text-box">
+              <i class="fp-icon ion-ios-lightbulb-outline"></i>
+
+              <div class="text">
+                <h4 class="title">Great Support</h4>
+                <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+              </div>
+            </div> <!--|End Text Box|-->
+          </div>
+
+          <div class="col-md-3">
+            <!--|Text Box|-->
+            <div class="text-box">
+              <i class="fp-icon ion-ios-rose-outline"></i>
+
+              <div class="text">
+                <h4 class="title">Clean Design</h4>
+                <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+              </div>
+            </div> <!--|End Text Box|-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--|Subscribe|-->
+    <div class="subscribe overlay-black">
+      <div class="overlay-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!--|Section Header|-->
+              <header class="section-header">
+                <h2 class="section-title">Get Live Update</h2>
+                <p>No spam promise - only latest news and prices!</p>
+              </header> <!--|End Section Header|-->
+            </div>
+
+            <div class="col-md-8">
+              <!--|Subscribe Form|-->
+              <form class="subscribe-form">
+                <p class="subscribe-success" style="color: #008000"></p>
+                <p class="subscribe-error" style="color: #ff0000"></p>
+                <div class="row">
+                  <div class="col-md-8"><input type="email" placeholder="Enter your email address" name="EMAIL"></div>
+                  <div class="col-md-4"><button type="submit" class="btn btn-lg btn-block btn-primary"><i class="ion-paper-airplane"></i> Subscribe</button></div>
+                </div>
+              </form> <!--|End Subscribe Form|-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--||End Subscribe||-->
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-img">
+              <img src="assets/images/dashboard01.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!--|Section Header|-->
+            <header class="section-header">
+              <h2 class="section-title">More Features <span>Explore</span> in This Section</h2>
+              <p>Phasellus a nisi tincidunt, mattis risus nec, elementum magna. Duis vestibulum tellus at ultrices commodo. Nunc lacinia nisi lacus, nec suscipit eros tristique vel.</p>
+            </header> <!--|End Section Header|-->
+
+            <!--|List|-->
+            <ul class="fp-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Nunc eu magna non turpis malesuada.</li>
+              <li>Phasellus finibus tellus sed.</li>
+              <li>Donec eu mauris nec ligula venenatis.</li>
+            </ul> <!--|End List|-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!--|Section Header|-->
+            <header class="section-header">
+              <h2 class="section-title">Another <span>Section</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </header> <!--|End Section Header|-->
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <!--|Text Box|-->
+                <div class="text-box">
+                  <i class="fp-icon ion-ios-book-outline"></i>
+
+                  <div class="text">
+                    <h4 class="title">Well Documentation</h4>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                  </div>
+                </div> <!--|End Text Box|-->
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <!--|Text Box|-->
+                <div class="text-box">
+                  <i class="fp-icon ion-ios-lightbulb-outline"></i>
+
+                  <div class="text">
+                    <h4 class="title">Modern Design</h4>
+                    <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                  </div>
+                </div> <!--|End Text Box|-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-img">
+              <img src="assets/images/dashboard02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--|Statistics|-->
+    <div class="statistics overlay-black">
+      <div class="overlay-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!--|Statistic Box|-->
+              <div class="statistic-box">
+                <i class="fp-icon ion-ios-cloud-download-outline"></i>
+
+                <div class="text">
+                  <h4 class="title"><span class="countup">1,400</span>+</h4>
+                  <span class="fp-meta">Total Downloads</span>
+                </div>
+              </div> <!--|End Statistic Box|-->
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <!--|Statistic Box|-->
+              <div class="statistic-box">
+                <i class="fp-icon ion-leaf"></i>
+
+                <div class="text">
+                  <h4 class="title"><span class="countup">9,305</span></h4>
+                  <span class="fp-meta">Line of Code</span>
+                </div>
+              </div> <!--|End Statistic Box|-->
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <!--|Statistic Box|-->
+              <div class="statistic-box">
+                <i class="fp-icon ion-ios-paw-outline"></i>
+
+                <div class="text">
+                  <h4 class="title"><span class="countup">17</span></h4>
+                  <span class="fp-meta">Awards</span>
+                </div>
+              </div> <!--|End Statistic Box|-->
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <!--|Statistic Box|-->
+              <div class="statistic-box">
+                <i class="fp-icon ion-ios-partlysunny-outline"></i>
+
+                <div class="text">
+                  <h4 class="title"><span class="countup">235</span>+</h4>
+                  <span class="fp-meta">Solved Ticket</span>
+                </div>
+              </div> <!--|End Statistic Box|-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--|End Statistic|-->
+  </div> <!--||End Features||-->
+
+  <!--|===================================================================
+  |Plans
+  |=======================================================================|-->
+  <section id="plans" class="section">
+    <div class="container">
+      <!--|Section Header|-->
+      <header class="section-header align-center">
+        <div class="row">
+          <div class="col-md-6 block-center">
+            <h2 class="section-title">Our <span>Plans</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </header> <!--|End Section Header|-->
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <!--|Pricing Table|-->
+          <div class="pricing-table">
+            <div class="pricing-header">
+              <p class="plan-name">Basic</p>
+              <p class="price"><span class="currency-symbol">$</span>25 <span class="duration">/month</span></p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>10GB Disk Space</li>
+                <li>5GB Bandwidth</li>
+                <li class="disable">Email Account</li>
+                <li class="disable">Unlimited Subdomain</li>
+                <li class="disable">Free Customar Support</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a class="btn btn-default" href="#"><i class="ion-ios-cart"></i>Purchase</a>
+            </div>
+          </div> <!--|Pricing Table|-->
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <!--|Pricing Table|-->
+          <div class="pricing-table highlight">
+            <div class="pricing-header">
+              <p class="plan-name">Standard</p>
+              <p class="price"><span class="currency-symbol">$</span>40 <span class="duration">/month</span></p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>45GB Disk Space</li>
+                <li>Unlimited Bandwidth</li>
+                <li>Email Account</li>
+                <li class="disable">Unimited Subdomains</li>
+                <li class="disable">Free Customar Support</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a class="btn btn-default" href="#"><i class="ion-ios-cart"></i>Purchase</a>
+            </div>
+          </div> <!--|Pricing Table|-->
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <!--|Pricing Table|-->
+          <div class="pricing-table">
+            <div class="pricing-header">
+              <p class="plan-name">Business</p>
+              <p class="price"><span class="currency-symbol">$</span>60 <span class="duration">/month</span></p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>10GB Disk Space</li>
+                <li>5GB Bandwidth</li>
+                <li>Email Account</li>
+                <li>Unlimited Subdomain</li>
+                <li>Free Customar Support</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a class="btn btn-default" href="#"><i class="ion-ios-cart"></i>Purchase</a>
+            </div>
+          </div> <!--|Pricing Table|-->
+        </div>
+      </div>
+    </div>
+  </section> <!--|End Plans|-->
+
+
+  <!--|===================================================================
+  |Review
+  |=======================================================================|-->
+  <section id="review" class="reviews section overlay-black">
+    <div class="overlay-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 block-center">
+            <!--|Review Carousel|-->
+            <div class="review-carousel">
+              <div class="review-wrap">
+                <div class="review">
+                  <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                  </div>
+
+                  <figure class="review-meta">
+                    <img class="avatar" src="assets/images/avatar01.jpg" alt="">
+                    <figcaption class="info">
+                      <h6 class="name">Jarne Martens</h6>
+                      <span class="meta"><em>CEO</em> &dash; <a href="#">Ogr. Name</a></span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="review-wrap">
+                <div class="review">
+                  <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                  </div>
+
+                  <figure class="review-meta">
+                    <img class="avatar" src="assets/images/avatar03.jpg" alt="">
+                    <figcaption class="info">
+                      <h6 class="name">Richard Ross</h6>
+                      <span class="meta"><em>CTO</em> &dash; <a href="#">Ogr. Name</a></span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="review-wrap">
+                <div class="review">
+                  <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                  </div>
+
+                  <figure class="review-meta">
+                    <img class="avatar" src="assets/images/avatar02.jpg" alt="">
+                    <figcaption class="info">
+                      <h6 class="name">Andrea May</h6>
+                      <span class="meta"><em>Founder</em> &dash; <a href="#">Ogr. Name</a></span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div> <!--|End Review Carousel|-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!--|End Review|-->
+
+  <!--|===================================================================
+  |Team
+  |=======================================================================|-->
+  <section id="team" class="section">
+    <div class="container">
+      <!--|Section Header|-->
+      <div class="section-header align-center">
+        <div class="row">
+          <div class="col-md-6 block-center">
+            <h2 class="section-title">Our <span>Team</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div> <!--|End Section Header|-->
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--|Team Member|-->
+          <div class="team-member">
+            <figure class="avatar">
+              <img src="assets/images/team_member01.jpg" alt="">
+
+              <figcaption class="social-links brand-bg">
+                <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
+                <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
+                <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
+                <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+              </figcaption>
+            </figure>
+
+            <div class="member-info">
+              <h4 class="name">Juan Carter</h4>
+              <cite>Founder &amp; Lead Developer</cite>
+            </div>
+          </div> <!--|End Team Member|-->
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <!--|Team Member|-->
+          <div class="team-member">
+            <figure class="avatar">
+              <img src="assets/images/team_member02.jpg" alt="">
+
+              <figcaption class="social-links brand-bg">
+                <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
+                <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
+                <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
+                <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+              </figcaption>
+            </figure>
+
+            <div class="member-info">
+              <h4 class="name">Doris McCoy</h4>
+              <cite>Front-end Developer</cite>
+            </div>
+          </div> <!--|End Team Member|-->
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <!--|Team Member|-->
+          <div class="team-member">
+            <figure class="avatar">
+              <img src="assets/images/team_member03.jpg" alt="">
+
+              <figcaption class="social-links brand-bg">
+                <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
+                <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
+                <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
+                <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+              </figcaption>
+            </figure>
+
+            <div class="member-info">
+              <h4 class="name">Austin Patterson</h4>
+              <cite>Web Developer</cite>
+            </div>
+          </div> <!--|End Team Member|-->
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <!--|Team Member|-->
+          <div class="team-member">
+            <figure class="avatar">
+              <img src="assets/images/team_member04.jpg" alt="">
+
+              <figcaption class="social-links brand-bg">
+                <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
+                <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
+                <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
+                <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+              </figcaption>
+            </figure>
+
+            <div class="member-info">
+              <h4 class="name">Alan Boyd</h4>
+              <cite>Front-end Developer</cite>
+            </div>
+          </div> <!--|End Team Member|-->
+        </div>
+      </div>
+    </div>
+  </section> <!--|End Team|-->
+
+  <!--|===================================================================
+  |FAQ
+  |=======================================================================|-->
+  <section id="faqs" class="section section-bg">
+    <div class="container">
+      <!--|Section Header|-->
+      <header class="section-header align-center">
+        <div class="row">
+          <div class="col-md-6 block-center">
+            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </header> <!--|End Section Header|-->
+
+      <div class="row">
+        <div class="col-md-9 block-center">
+          <!--|FAQS|-->
+          <div class="faq-wrapper" id="faq-panel">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqOne">
+                    <i class="fa-icon ion-help-circled"></i> How do I become an author?
+                  </a>
+                </h4>
+              </div>
+              <div id="faqOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqTwo">
+                    <i class="fa-icon ion-chatbox-working"></i>  Tips for Increasing Your Referral Income.
+                  </a>
+                </h4>
+              </div>
+              <div id="faqTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum.</p>
+                  <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqThree">
+                    <i class="fa-icon ion-images"></i> What Images, Videos, Code Can I Use in my Items?
+                  </a>
+                </h4>
+              </div>
+              <div id="faqThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqFour">
+                    <i class="fa-icon ion-social-usd"></i> How does the Tuts+ Premium affiliate program work?
+                  </a>
+                </h4>
+              </div>
+              <div id="faqFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum.</p>
+                  <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqFive">
+                    <i class="fa-icon ion-alert"></i> Can I offer my items for free on a promotional basis?
+                  </a>
+                </h4>
+              </div>
+              <div id="faqFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--|End FAQS|-->
+      </div>
+    </div>
+  </section> <!--||End FAQ||-->
+
+  <!--|===================================================================
+  |Blog
+  |=======================================================================|-->
+  <section id="blog" class="section blog-posts">
+    <div class="container">
+      <!--|Section Header|-->
+      <header class="section-header align-center">
+        <div class="row">
+          <div class="col-md-6 block-center">
+            <h2 class="section-title">Latest from <span>Blog</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </header> <!--|End Section Header|-->
+
+      <!--|Post Wrapper|-->
+      <div class="posts-wrapper">
+        <div class="row">
+          <div class="col-md-6">
+            <!--|Post|-->
+            <article class="fp-post">
+              <a class="thumb-container" href="#">
+                <img src="assets/images/posts/img01.jpg" alt="">
+              </a>
+              <div class="post-desc">
+                <header class="post-header">
+                  <div class="fp-cat post-meta"><a href="#">Business</a></div>
+                  <h4 class="post-title"><a href="#">You Might not be Aware of This Fact Gravida</a></h4>
+                </header>
+                <div class="fp-entry">
+                  <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
+                  <a class="more-btn" href="#">Read More +</a>
+                </div>
+              </div>
+            </article> <!--|End Post|-->
+          </div>
+
+          <div class="col-md-6">
+            <!--|Post|-->
+            <article class="fp-post">
+              <a class="thumb-container" href="#">
+                <img src="assets/images/posts/img02.jpg" alt="">
+              </a>
+              <div class="post-desc">
+                <header class="post-header">
+                  <div class="fp-cat post-meta"><a href="#">Business</a></div>
+                  <h4 class="post-title"><a href="#">Proin Gravida Nibh vel Velit Auctor Aliquet</a></h4>
+                </header>
+                <div class="fp-entry">
+                  <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
+                  <a class="more-btn" href="#">Read More +</a>
+                </div>
+              </div>
+            </article> <!--|End Post|-->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <!--|Post|-->
+            <article class="fp-post">
+              <a class="thumb-container" href="#">
+                <img src="assets/images/posts/img03.jpg" alt="">
+              </a>
+              <div class="post-desc">
+                <header class="post-header">
+                  <div class="fp-cat post-meta"><a href="#">Business</a></div>
+                  <h4 class="post-title"><a href="#">Tips for Increasing Your Referral Income</a></h4>
+                </header>
+                <div class="fp-entry">
+                  <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
+                  <a class="more-btn" href="#">Read More +</a>
+                </div>
+              </div>
+            </article> <!--|End Post|-->
+          </div>
+
+          <div class="col-md-6">
+            <!--|Post|-->
+            <article class="fp-post">
+              <a class="thumb-container" href="#">
+                <img src="assets/images/posts/img04.jpg" alt="">
+              </a>
+              <div class="post-desc">
+                <header class="post-header">
+                  <div class="fp-cat post-meta"><a href="#">Webdesign</a></div>
+                  <h4 class="post-title"><a href="#">You might not be aware of this fact</a></h4>
+                </header>
+                <div class="fp-entry">
+                  <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
+                  <a class="more-btn" href="#">Read More +</a>
+                </div>
+              </div>
+            </article> <!--|End Post|-->
+          </div>
+        </div>
+
+        <!--|Button Panel|-->
+        <div class="btn-panel">
+          <a class="btn btn-primary" href="#">View More</a>
+        </div> <!--|End Button Panel|-->
+      </div> <!--|End Post Wrapper|-->
+    </div>
+  </section> <!--|End Blog|-->
+
+  <!--|===================================================================
+  |Contact
+  |=======================================================================|-->
+  <section id="contact" class="contact-area section-bg">
+    <!--|Google Map|-->
+    <div class="g-map"><div id="map"></div></div> <!--|End Google Map|-->
+
+    <div class="fp-contact">
+      <header class="section-header">
+        <h2 class="section-title"><span>Contact</span> Us</h2>
+        <p>If you have any question or need any help, please contact with us</p>
+      </header>
+
+      <!--|Contact Form|-->
+      <form class="contact-form" novalidate="novalidate">
+        <!--|Action Message|-->
+        <div class="action-message">
+          <p class="alert-success contact-success">Your massage has been sent!</p>
+          <p class="alert-danger contact-error">Opps!! You dont fill all required field correctly.</p>
+        </div> <!--|End Action Message|-->
+
+        <div class="entry-field">
+          <input type="text" required="" placeholder="Your name" name="name" id="name">
+        </div>
+        <div class="entry-field">
+          <input type="email" required="" placeholder="info@example.com" name="email" id="email">
+        </div>
+        <div class="entry-field">
+          <textarea required="" placeholder="Your massage" name="message" rows="6" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-paper-plane-o"></i> Send Mail</button>
+      </form> <!--|End Contact Form|-->
+    </div>
+  </section> <!--|End Contact|-->
+
+  <!--|===================================================================
+  |Footer
+  |=======================================================================|-->
+  <footer class="footer">
+    <div class="container">
+      <!--|Footer Nav|-->
+      <div class="social-links -brand-color">
+        <a class="facebook" href="#"><i class="ion-social-facebook"></i></a>
+        <a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
+        <a class="pinterest" href="#"><i class="ion-social-pinterest"></i></a>
+        <a class="linkedin" href="#"><i class="ion-social-linkedin"></i></a>
+      </div> <!--|Footer Nav|-->
+
+      <p class="copyright">&copy; 2015 XPOSE, Ins. All Right Reserved</p>
+    </div>
+  </footer> <!--|End Footer|-->
+
+  <!--|Scroll Top|-->
+  <a class="scroll-top" href="#header"><i class="ion-arrow-up-a"></i></a>
+</div>
+
+<!--||Javascript||-->
+<!--|jQuery|-->
+<script src="assets/js/jquery.min.js"></script>
+<!--|Google Map|-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<!--|Form|-->
+<script src="assets/js/jquery.form.js"></script>
+<!--|Validate|-->
+<script src="assets/js/jquery.validate.min.js"></script>
+<!--|Ajaxchimp|-->
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<!--|Waypoints|-->
+<script src="assets/js/waypoints.min.js"></script>
+<!--|Ajaxchimp|-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--|Magnific Popup|-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--|Owl Carousel|-->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--|Bootstrap|-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--|Init|-->
+<script src="assets/js/init.js"></script>
 </body>
-
-<footer>
-    <!-- JS -->
-    <script src="assets/js/app.js"></script>
-</footer>
-
 </html>
