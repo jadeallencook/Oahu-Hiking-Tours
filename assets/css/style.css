@@ -992,7 +992,7 @@ img {
 # Header
 --------------------------------------------------------------*/
 .fp-header {
-  background-image: url("../images/header_bg.jpg");
+  background-image: url("../images/stairway-to-heaven.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1310,23 +1310,6 @@ img {
   border-top: 1px dotted;
   border-color: rgba(0, 0, 0, 0.2);
 }
-.pricing-table ul > li::before {
-  content: '\f3fd';
-  display: inline-block;
-  margin-right: 10px;
-  font-family: ionicons;
-  vertical-align: middle;
-  color: #25921f;
-  font-size: 1.3em;
-}
-.pricing-table ul > li.disable {
-  text-decoration: line-through;
-  color: #999999;
-}
-.pricing-table ul > li.disable::before {
-  content: '\f404';
-  color: #ff0000;
-}
 .pricing-table .pricing-footer {
   text-align: center;
   padding: 20px;
@@ -1344,6 +1327,10 @@ img {
 .pricing-table.highlight .btn-default:hover, .pricing-table.highlight .btn-default:focus, .pricing-table.highlight .btn-default:active {
   background-color: #1976d2 !important;
   border-color: #1976d2 !important;
+}
+
+div.pricing-features {
+    text-align: left;
 }
 
 /*
@@ -1539,6 +1526,9 @@ img {
   left: 0;
   opacity: 1;
 }
+div.team-member {
+    text-align: center;
+}
 .team-member .member-info .name {
   font-size: 1em;
   font-weight: 700;
@@ -1700,6 +1690,10 @@ img {
   width: 100%;
 }
 
+section#contact {
+    text-align: center;
+}
+
 .address-box {
   padding: 15px 8px 10px;
 }
@@ -1760,7 +1754,6 @@ img {
 @media screen and (min-width: 768px) {
   .g-map,
   .fp-contact {
-    float: left;
     width: 50%;
   }
 
