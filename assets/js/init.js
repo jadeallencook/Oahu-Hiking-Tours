@@ -136,6 +136,37 @@
                 });
             }
         });
+
+
+        // inserting google doc information
+        // using tabletop to get gDoc
+        function tabletop(doc) {
+            Tabletop.init({
+                key: doc,
+                callback: insertDoc,
+                simpleSheet: false
+            });
+        }
+        // after gDoc loads
+        function insertDoc(data, tabletop) {
+            function insertHike(num, section) {
+                return 'ul#' + data.schedule.elements[num].id + ' li span.' + section;
+            }
+            for (var num = 0; num < 3; num++) {
+                $(insertHike(num, 'hike-name')).append(data.schedule.elements[num].name);
+                $(insertHike(num, 'hike-date')).append(data.schedule.elements[num].date);
+                $(insertHike(num, 'hike-time')).append(data.schedule.elements[num].time);
+                $(insertHike(num, 'hike-miles')).append(data.schedule.elements[num].miles);
+                $(insertHike(num, 'hike-hours')).append(data.schedule.elements[num].hours);
+                $(insertHike(num, 'hike-difficulty')).append(data.schedule.elements[num].difficulty);
+                $('span#' + data.schedule.elements[num].id + '-cost').append(data.schedule.elements[num].cost);
+                $('input#' + data.schedule.elements[num].id + '-paypal-id').attr('value', data.schedule.elements[num].paypal);
+                $('span#' + data.schedule.elements[num].id + '-banner-date').append(data.schedule.elements[num].date);
+                $('span#' + data.schedule.elements[num].id + '-banner-time').append(data.schedule.elements[num].time);
+            }
+        }
+        tabletop('15RCwv5Y3MyEcvDyGPDaLD1LYUsxQNezbmFvwU7X3IMA')
+
     });
 
 })(window.jQuery);

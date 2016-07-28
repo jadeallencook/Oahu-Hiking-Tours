@@ -1,6 +1,6 @@
 <?php
 
-$to = "frontpixels@gmail.com";  // Replace with your mail address
+$to = "hello@oahuhikingtours.com";
 $name = $_REQUEST['name'];
 $from = $_REQUEST['email'];
 $headers = "From: $from";
