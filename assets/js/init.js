@@ -79,30 +79,6 @@
             navText: ['<i class="ion-ios-arrow-thin-left"><i/>', '<i class="ion-ios-arrow-thin-right"><i/>']
         });
 
-        //
-        // Subscribe (mailchimp)
-        var mailSubscribe = $('.subscribe-form');
-
-        mailSubscribe.ajaxChimp({
-            callback: mailchimpCallback,
-            url: "http://frontpixels.us11.list-manage.com/subscribe/post?u=8ed724b6f4db710960cbc2439&amp;id=26648b74c9" // Just paste your mailchimp list url inside the "".
-        });
-
-        function mailchimpCallback(resp) {
-            var successMessage = $('.subscribe-success'),
-                errorMessage = $('.subscribe-error'),
-                successIcon = '<i class="ion-ios-checkmark"></i> ',
-                errorIcon = '<i class="ion-ios-close"></i> ';
-
-            if (resp.result === 'success') {
-                successMessage.html(successIcon + resp.msg).fadeIn(1000);
-                errorMessage.fadeOut(300);
-
-            } else if (resp.result === 'error') {
-                errorMessage.html(errorIcon + resp.msg).fadeIn(1000);
-            }
-        }
-
         //  Counter Up
         $('.countup').counterUp({
             delay: 10,
@@ -161,114 +137,36 @@
             }
         });
 
-        //
-        // Google Map
-        var mapLocation = new google.maps.LatLng(40.712784, -74.005941); //change coordinates here
-        var marker;
-        var map;
 
-        function initialize() {
-            var mapOptions = {
-                zoom: 10, //change zoom here
-                center: mapLocation,
-                scrollwheel: false,
-                styles: [
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{
-                            "color": "#212121"
-                        }]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [{
-                            "color": "#e3e3e3"
-                        }]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "labels.text",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [{
-                            "saturation": -60
-                        }, {
-                            "lightness": 15
-                        }]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [{
-                            "color": "#e3e3e3",
-                            "visibility": "simplified"
-                        }]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "all",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [{
-                            "color": "#bbdefb"
-                        }, {
-                            "visibility": "on"
-                        }]
-                    }
-        ]
-
-            };
-
-            map = new google.maps.Map(document.getElementById('map'),
-                mapOptions);
-
-            // Replace with your data
-            var contentString = '<div class="address-box">' + '<div class="info-head"><img src="assets/images/logo_dark.png" alt=""></div>' + '<p class="map-address">' + '<i class="ion-ios-location"></i> New York, USA<br>' + '<i class="ion-ios-telephone"></i> 012-345-6789<br>' + '<i class="ion-email"></i> <a href="mailto:info@example.com">info@example.com</a></p>' + '</div>';
-
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            var image = 'assets/images/locate.png';
-            marker = new google.maps.Marker({
-                map: map,
-                draggable: true,
-                title: 'Imply', //change title here
-                icon: image,
-                animation: google.maps.Animation.DROP,
-                position: mapLocation
-            });
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
+        // inserting google doc information
+        // using tabletop to get gDoc
+        function tabletop(doc) {
+            Tabletop.init({
+                key: doc,
+                callback: insertDoc,
+                simpleSheet: false
             });
         }
-        google.maps.event.addDomListener(window, 'load', initialize);
+        // after gDoc loads
+        function insertDoc(data, tabletop) {
+            function insertHike(num, section) {
+                return 'ul#' + data.schedule.elements[num].id + ' li span.' + section;
+            }
+            for (var num = 0; num < 3; num++) {
+                $(insertHike(num, 'hike-name')).append(data.schedule.elements[num].name);
+                $(insertHike(num, 'hike-date')).append(data.schedule.elements[num].date);
+                $(insertHike(num, 'hike-time')).append(data.schedule.elements[num].time);
+                $(insertHike(num, 'hike-miles')).append(data.schedule.elements[num].miles);
+                $(insertHike(num, 'hike-hours')).append(data.schedule.elements[num].hours);
+                $(insertHike(num, 'hike-difficulty')).append(data.schedule.elements[num].difficulty);
+                $('span#' + data.schedule.elements[num].id + '-cost').append(data.schedule.elements[num].cost);
+                $('input#' + data.schedule.elements[num].id + '-paypal-id').attr('value', data.schedule.elements[num].paypal);
+                $('span#' + data.schedule.elements[num].id + '-banner-date').append(data.schedule.elements[num].date);
+                $('span#' + data.schedule.elements[num].id + '-banner-time').append(data.schedule.elements[num].time);
+            }
+        }
+        tabletop('15RCwv5Y3MyEcvDyGPDaLD1LYUsxQNezbmFvwU7X3IMA')
+
     });
 
 })(window.jQuery);

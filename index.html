@@ -8,7 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!--|Title of Site|-->
     <title>Oahu Hiking Tours - Best Oahu Hikes</title>
-
+    <meta name="keywords" content="hiking, tours, hiking tours, hawaii, oahu, north shore, honolulu, haleiwa,outdoor, oahu activities">
+    <meta name="description" content="Many Oahu trails are overgrown, rugged, and challenging! Your guide will lead you through the jungled wilderness, along jagged cliffs, up and down summits, then back safely!">
     <!--|Google Font(Open Sans)|-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!--|Google Font(Playfair Display)|-->
@@ -81,11 +82,9 @@
                 <ul class="nav">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#plans">Plans</a></li>
-                    <li><a href="#review">Reviews</a></li>
+                    <li><a href="#plans">Schedule</a></li>
+                    <li><a href="#review">Quotes</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#faqs">FAQ</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -124,7 +123,6 @@
                         <a class="sign-btn" href="#"><i class="ion-person"></i></a>
 
                         <span class="sign-area">
-          <a class="fp-login" href="#"><i class="ion-ios-cart"></i> Book</a>
           <a class="fp-signup" href="#"><i class="ion-person-add"></i> Careers</a>
         </span>
                     </div>
@@ -142,15 +140,20 @@
                 <div class="header-content">
                     <div class="container">
                         <h1 class="head-title"><span>Next weeks hike</span> Stairway To Heaven</h1>
-
+                        <!--
                         <div class="watch-video">
                             <a class="play-btn" href="https://vimeo.com/channels/staffpicks/146064760"><i class="ion-ios-play"></i></a>
                             <span class="fp-meta">Watch Our Video</span>
                         </div>
-
+                        -->
                         <div class="btn-panel">
-                            <p>9/9/2016 at 9:30 AM</p>
-                            <a class="btn btn-lg btn-primary" href="#">Book Tickets</a>
+                            <p><span id="this-week-banner-date"></span> at <span id="this-week-banner-time"></span></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input id="this-week-paypal-id" type="hidden" name="hosted_button_id" value="">
+                                <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-lg btn-primary" value="Book Tickets">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -164,16 +167,15 @@
         <!--|===================================================================
   |Clients
   |=======================================================================|-->
+        <!--
         <div class="clients">
             <div class="container">
                 <div class="client-wrapper">
-                    <a class="client" href="#"><img src="assets/images/clients/logo01.png" alt=""></a>
-                    <a class="client" href="#"><img src="assets/images/clients/logo02.png" alt=""></a>
-                    <a class="client" href="#"><img src="assets/images/clients/logo03.png" alt=""></a>
-                    <a class="client" href="#"><img src="assets/images/clients/logo04.png" alt=""></a>
+                    <a class="client"><img src="assets/images/islands-white.png" alt=""></a>
                 </div>
             </div>
         </div>
+-->
         <!--||End Clients||-->
 
         <!--|===================================================================
@@ -266,18 +268,38 @@
 
                             <div class="col-md-8">
                                 <!--|Subscribe Form|-->
-                                <form class="subscribe-form">
-                                    <p class="subscribe-success" style="color: #008000"></p>
-                                    <p class="subscribe-error" style="color: #ff0000"></p>
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <input type="email" placeholder="Enter your email address" name="EMAIL">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <button type="submit" class="btn btn-lg btn-block btn-primary"><i class="ion-paper-airplane"></i> Subscribe</button>
-                                        </div>
+                                <p class="subscribe-success" style="color: #008000"></p>
+                                <p class="subscribe-error" style="color: #ff0000"></p>
+                                <div class="row">
+                                    <!-- Begin MailChimp Signup Form -->
+                                    <div id="mc_embed_signup">
+                                        <form action="//oahuhikingtours.us13.list-manage.com/subscribe/post?u=530cdc58caf381c780d884bdc&amp;id=a49e7f1cdd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate>
+                                            <div id="mc_embed_signup_scroll" class="row" style="margin-top: -15px;">
+                                                <div class="mc-field-group">
+                                                    <div class="col-md-8">
+                                                        <label for="mce-EMAIL">Email Address </label>
+                                                        <input type="email" value="" placeholder="Please enter your email here..." name="EMAIL" class="required email" id="mce-EMAIL">
+                                                    </div>
+                                                </div>
+                                                <div id="mce-responses" class="clear">
+                                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                                </div>
+                                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                    <input type="text" name="b_530cdc58caf381c780d884bdc_a49e7f1cdd" tabindex="-1" value="">
+                                                </div>
+                                                <div class="clear">
+                                                    <div class="col-md-4">
+                                                        <input type="submit" style="margin-top: 28px; background-color: #2196F3;" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+
+                                    <!--End mc_embed_signup-->
+                                </div>
                                 <!--|End Subscribe Form|-->
                             </div>
                         </div>
@@ -310,16 +332,16 @@
                         <div class="pricing-table">
                             <div class="pricing-header">
                                 <p class="plan-name">Last Week</p>
-                                <p class="price"><span class="currency-symbol">$</span>25 <span class="duration">/person</span></p>
+                                <p class="price"><span class="currency-symbol">$</span><span id="last-week-cost"></span> <span class="duration">/person</span></p>
                             </div>
                             <div class="pricing-features">
-                                <ul>
-                                    <li><b>Hike: </b> Stairway To Heaven</li>
-                                    <li><b>Date: </b> 5/5/2016</li>
-                                    <li><b>Time: </b> 9:00AM</li>
-                                    <li><b>Distance: </b> 10 Miles</li>
-                                    <li><b>Length: </b> 10 Hours</li>
-                                    <li><b>Diffeculty: </b>10/10</li>
+                                <ul id="last-week">
+                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
+                                    <li><b>Date: </b> <span class="hike-date"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
+                                    <li><b>Diffeculty: </b><span class="hike-difficulty"></span>/10</li>
                                 </ul>
                             </div>
                             <div class="pricing-footer">
@@ -334,20 +356,26 @@
                         <div class="pricing-table highlight">
                             <div class="pricing-header">
                                 <p class="plan-name">This Week</p>
-                                <p class="price"><span class="currency-symbol">$</span>140 <span class="duration">/person</span></p>
+                                <p class="price"><span class="currency-symbol">$</span><span id="this-week-cost"></span> <span class="duration">/person</span></p>
                             </div>
                             <div class="pricing-features">
-                                <ul>
-                                    <li><b>Hike: </b> Stairway To Heaven</li>
-                                    <li><b>Date: </b> 5/5/2016</li>
-                                    <li><b>Time: </b> 9:00AM</li>
-                                    <li><b>Distance: </b> 10 Miles</li>
-                                    <li><b>Length: </b> 10 Hours</li>
-                                    <li><b>Diffeculty: </b>10/10</li>
+                                <ul id="this-week">
+                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
+                                    <li><b>Date: </b> <span class="hike-date"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
+                                    <li><b>Diffeculty: </b><span class="hike-difficulty"></span>/10</li>
                                 </ul>
                             </div>
                             <div class="pricing-footer">
-                                <a class="btn btn-default" href="#">Book Tickets</a>
+
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input id="this-week-paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
                             </div>
                         </div>
                         <!--|Pricing Table|-->
@@ -358,20 +386,25 @@
                         <div class="pricing-table">
                             <div class="pricing-header">
                                 <p class="plan-name">Next Week</p>
-                                <p class="price"><span class="currency-symbol">$</span>60 <span class="duration">/person</span></p>
+                                <p class="price"><span class="currency-symbol">$</span><span id="next-week-cost"></span> <span class="duration">/person</span></p>
                             </div>
                             <div class="pricing-features">
-                                <ul>
-                                    <li><b>Hike: </b> Stairway To Heaven</li>
-                                    <li><b>Date: </b> 5/5/2016</li>
-                                    <li><b>Time: </b> 9:00AM</li>
-                                    <li><b>Distance: </b> 10 Miles</li>
-                                    <li><b>Length: </b> 10 Hours</li>
-                                    <li><b>Diffeculty: </b>10/10</li>
+                                <ul id="next-week">
+                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
+                                    <li><b>Date: </b> <span class="hike-date"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
+                                    <li><b>Diffeculty: </b><span class="hike-difficulty"></span>/10</li>
                                 </ul>
                             </div>
                             <div class="pricing-footer">
-                                <a class="btn btn-default" href="#">Book Tickets</a>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input id="next-week-paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
                             </div>
                         </div>
                         <!--|Pricing Table|-->
@@ -392,7 +425,7 @@
                         <div class="col-md-7 block-center">
                             <!--|Review Carousel|-->
                             <div class="review-carousel">
-                                
+
                                 <div class="review-wrap">
                                     <div class="review">
                                         <div class="text">
@@ -406,7 +439,7 @@
                                         </figure>
                                     </div>
                                 </div>
-                                
+
                                 <div class="review-wrap">
                                     <div class="review">
                                         <div class="text">
@@ -420,7 +453,7 @@
                                         </figure>
                                     </div>
                                 </div>
-                                
+
                                 <div class="review-wrap">
                                     <div class="review">
                                         <div class="text">
@@ -434,7 +467,7 @@
                                         </figure>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <!--|End Review Carousel|-->
                         </div>
@@ -454,7 +487,11 @@
                     <div class="row">
                         <div class="col-md-6 block-center">
                             <h2 class="section-title">Our <span>Team</span></h2>
+<<<<<<< HEAD
                             <p>We are travelers, explorers, and adventurers. We take the paths less traveled in life, just like our hikes. We are here to serve your hiking needs, and guide you to accomplish your traveling goals.</p>
+=======
+                            <p>We are a partnership fused by ongoing energetic entrepreneurial explosions. We are young, driven, open minded individuals. We are here to serve your hiking needs, and guide you to accomplish your traveling goals.</p>
+>>>>>>> origin/master
                         </div>
                     </div>
                 </div>
@@ -466,18 +503,18 @@
                         <!--|Team Member|-->
                         <div class="team-member">
                             <figure class="avatar">
-                                <img src="assets/images/team_member03.jpg" alt="">
+                                <img src="assets/images/richard.jpg" alt="">
 
                                 <figcaption class="social-links brand-bg">
                                     <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
                                     <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
-                                    <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
                                     <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+                                    <a class="instagram" href="#"><i class="ion-social-instagram-outline"></i></a>
                                 </figcaption>
                             </figure>
 
                             <div class="member-info">
-                                <h4 class="name">Richard</h4>
+                                <h4 class="name">Richard Dowds</h4>
                                 <cite>Hiking Guide</cite>
                             </div>
                         </div>
@@ -491,10 +528,10 @@
                                 <img src="assets/images/jade-allen-cook.jpg" alt="jade allen cook web developer">
 
                                 <figcaption class="social-links brand-bg">
-                                    <a class="twitter" href="#"><i class="ion-social-twitter-outline"></i></a>
-                                    <a class="facebook" href="#"><i class="ion-social-facebook-outline"></i></a>
-                                    <a class="pinterest" href="#"><i class="ion-social-pinterest-outline"></i></a>
-                                    <a class="linkedin" href="#"><i class="ion-social-linkedin-outline"></i></a>
+                                    <a class="twitter" target="_blank" href="https://www.twitter.com/jadeallencook"><i class="ion-social-twitter-outline"></i></a>
+                                    <a class="facebook" target="_blank" href="https://www.facebook.com/jadeallencook"><i class="ion-social-facebook-outline"></i></a>
+                                    <a class="linkedin" target="_blank" href="http://www.jadeallencook.com/"><i class="ion-social-linkedin-outline"></i></a>
+                                    <a class="instagram" target="_blank" href="https://www.instagram.com/jadeallencook"><i class="ion-social-instagram-outline"></i></a>
                                 </figcaption>
                             </figure>
 
@@ -510,200 +547,6 @@
         </section>
         <!--|End Team|-->
 
-        <!--
-        <section id="faqs" class="section section-bg">
-            <div class="container">
-                <header class="section-header align-center">
-                    <div class="row">
-                        <div class="col-md-6 block-center">
-                            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </header>
-
-                <div class="row">
-                    <div class="col-md-9 block-center">
-                        <div class="faq-wrapper" id="faq-panel">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqOne">
-                    <i class="fa-icon ion-help-circled"></i> How do I become an author?
-                  </a>
-                </h4>
-                                </div>
-                                <div id="faqOne" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqTwo">
-                    <i class="fa-icon ion-chatbox-working"></i>  Tips for Increasing Your Referral Income.
-                  </a>
-                </h4>
-                                </div>
-                                <div id="faqTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum.</p>
-                                        <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqThree">
-                    <i class="fa-icon ion-images"></i> What Images, Videos, Code Can I Use in my Items?
-                  </a>
-                </h4>
-                                </div>
-                                <div id="faqThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqFour">
-                    <i class="fa-icon ion-social-usd"></i> How does the Tuts+ Premium affiliate program work?
-                  </a>
-                </h4>
-                                </div>
-                                <div id="faqFour" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum.</p>
-                                        <p>Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#faq-panel" href="#faqFive">
-                    <i class="fa-icon ion-alert"></i> Can I offer my items for free on a promotional basis?
-                  </a>
-                </h4>
-                                </div>
-                                <div id="faqFive" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="section blog-posts">
-            <div class="container">
-                <header class="section-header align-center">
-                    <div class="row">
-                        <div class="col-md-6 block-center">
-                            <h2 class="section-title">Latest from <span>Blog</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </header>
-
-                <div class="posts-wrapper">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article class="fp-post">
-                                <a class="thumb-container" href="#">
-                                    <img src="assets/images/posts/img01.jpg" alt="">
-                                </a>
-                                <div class="post-desc">
-                                    <header class="post-header">
-                                        <div class="fp-cat post-meta"><a href="#">Business</a></div>
-                                        <h4 class="post-title"><a href="#">You Might not be Aware of This Fact Gravida</a></h4>
-                                    </header>
-                                    <div class="fp-entry">
-                                        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
-                                        <a class="more-btn" href="#">Read More +</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-md-6">
-                            <article class="fp-post">
-                                <a class="thumb-container" href="#">
-                                    <img src="assets/images/posts/img02.jpg" alt="">
-                                </a>
-                                <div class="post-desc">
-                                    <header class="post-header">
-                                        <div class="fp-cat post-meta"><a href="#">Business</a></div>
-                                        <h4 class="post-title"><a href="#">Proin Gravida Nibh vel Velit Auctor Aliquet</a></h4>
-                                    </header>
-                                    <div class="fp-entry">
-                                        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
-                                        <a class="more-btn" href="#">Read More +</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article class="fp-post">
-                                <a class="thumb-container" href="#">
-                                    <img src="assets/images/posts/img03.jpg" alt="">
-                                </a>
-                                <div class="post-desc">
-                                    <header class="post-header">
-                                        <div class="fp-cat post-meta"><a href="#">Business</a></div>
-                                        <h4 class="post-title"><a href="#">Tips for Increasing Your Referral Income</a></h4>
-                                    </header>
-                                    <div class="fp-entry">
-                                        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
-                                        <a class="more-btn" href="#">Read More +</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-md-6">
-                            <article class="fp-post">
-                                <a class="thumb-container" href="#">
-                                    <img src="assets/images/posts/img04.jpg" alt="">
-                                </a>
-                                <div class="post-desc">
-                                    <header class="post-header">
-                                        <div class="fp-cat post-meta"><a href="#">Webdesign</a></div>
-                                        <h4 class="post-title"><a href="#">You might not be aware of this fact</a></h4>
-                                    </header>
-                                    <div class="fp-entry">
-                                        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt[...]</p>
-                                        <a class="more-btn" href="#">Read More +</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="btn-panel">
-                        <a class="btn btn-primary" href="#">View More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
--->
-
         <!--|===================================================================
   |Contact
   |=======================================================================|-->
@@ -712,7 +555,9 @@
                 <div class="fp-contact">
                     <header class="section-header">
                         <h2 class="section-title"><span>Contact</span> Us</h2>
-                        <p>Please contact us with ideas for bookings, questions, improvements, interesting hikes, alternate routes, and your opinions of our service.</p>
+                        <div class="col-md-8 block-center">
+                            <p>Please contact us with ideas for bookings, questions, improvements, interesting hikes, alternate routes, and your opinions of our service.</p>
+                        </div>
                     </header>
 
                     <!--|Contact Form|-->
@@ -749,13 +594,11 @@
                 <!--|Footer Nav|-->
                 <div class="social-links -brand-color">
                     <a class="facebook" href="#"><i class="ion-social-facebook"></i></a>
-                    <a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
-                    <a class="pinterest" href="#"><i class="ion-social-pinterest"></i></a>
-                    <a class="linkedin" href="#"><i class="ion-social-linkedin"></i></a>
+                    <a class="instagram" href="#"><i class="ion-social-instagram"></i></a>
                 </div>
                 <!--|Footer Nav|-->
 
-                <p class="copyright">&copy; 2015 XPOSE, Ins. All Right Reserved</p>
+                <p class="copyright">&copy; 2016 Oahu Hiking Tours - Theme by <a href="http://demo.frontpixels.com/imply/single_image_background/index.html" target="_blank">XPOST</a> - Revamped by <a href="http://www.jadeallencook.com" target="_blank">Jade Allen Cook</a></p>
             </div>
         </footer>
         <!--|End Footer|-->
@@ -767,14 +610,12 @@
     <!--||Javascript||-->
     <!--|jQuery|-->
     <script src="assets/js/jquery.min.js"></script>
-    <!--|Google Map|-->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <!-- GDoc Tabletop -->
+    <script src="assets/js/tabletop.js"></script>
     <!--|Form|-->
     <script src="assets/js/jquery.form.js"></script>
     <!--|Validate|-->
     <script src="assets/js/jquery.validate.min.js"></script>
-    <!--|Ajaxchimp|-->
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <!--|Waypoints|-->
     <script src="assets/js/waypoints.min.js"></script>
     <!--|Ajaxchimp|-->
