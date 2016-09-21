@@ -149,20 +149,25 @@
         }
         // after gDoc loads
         function insertDoc(data, tabletop) {
-            function insertHike(num, section) {
-                return 'ul#' + data.schedule.elements[num].id + ' li span.' + section;
-            }
-            for (var num = 0; num < 3; num++) {
-                $(insertHike(num, 'hike-name')).append(data.schedule.elements[num].name);
-                $(insertHike(num, 'hike-date')).append(data.schedule.elements[num].date);
-                $(insertHike(num, 'hike-time')).append(data.schedule.elements[num].time);
-                $(insertHike(num, 'hike-miles')).append(data.schedule.elements[num].miles);
-                $(insertHike(num, 'hike-hours')).append(data.schedule.elements[num].hours);
-                $(insertHike(num, 'hike-difficulty')).append(data.schedule.elements[num].difficulty);
-                $('span#' + data.schedule.elements[num].id + '-cost').append(data.schedule.elements[num].cost);
-                $('input#' + data.schedule.elements[num].id + '-paypal-id').attr('value', data.schedule.elements[num].paypal);
-                $('span#' + data.schedule.elements[num].id + '-banner-date').append(data.schedule.elements[num].date);
-                $('span#' + data.schedule.elements[num].id + '-banner-time').append(data.schedule.elements[num].time);
+            var hikes = data.hikes.elements;
+            for (var i = 0; i < 9; i++) {
+                var currentHike = 'div#hike-' + (i + 1);
+                var $hikeName = $(currentHike + ' div.pricing-table div.hike-name');
+                var $hikePrice = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-price');
+                var $hikeMiles = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-miles');
+                var $hikeTime = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-time');
+                var $hikeLocation = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-location');
+                var $hikeElevation = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-elevation');
+                var $hikeDifficulty = $(currentHike + ' div.pricing-table div.pricing-features ul li span.hike-difficulty');
+                var $hikePaypal = $(currentHike + ' div.pricing-table div.pricing-footer form input.paypal-id');
+                $hikeName.empty().append(hikes[i].name);
+                $hikePrice.empty().append(hikes[i].price);
+                $hikeMiles.empty().append(hikes[i].miles);
+                $hikeTime.empty().append(hikes[i].hours);
+                $hikeLocation.empty().append(hikes[i].location);
+                $hikeElevation.empty().append(hikes[i].elevation);
+                $hikeDifficulty.empty().append(hikes[i].difficulty);
+                $hikePaypal.attr('value', hikes[i].paypal);
             }
         }
         tabletop('15RCwv5Y3MyEcvDyGPDaLD1LYUsxQNezbmFvwU7X3IMA')

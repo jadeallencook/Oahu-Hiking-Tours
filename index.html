@@ -82,7 +82,7 @@
                 <ul class="nav">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#plans">Schedule</a></li>
+                    <li><a href="#plans">Hikes</a></li>
                     <li><a href="#review">Quotes</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -139,13 +139,10 @@
                         </div>
                         -->
                         <div class="btn-panel">
-                            <p><span id="this-week-banner-date"></span> at <span id="this-week-banner-time"></span></p>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input id="this-week-paypal-id" type="hidden" name="hosted_button_id" value="">
-                                <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-lg btn-primary" value="Book Tickets">
-                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                            </form>
+                            <p><span id="this-week-banner-date"></span>Let's Get Started<span id="this-week-banner-time"></span></p>
+                            <a href="#plans">
+                                <button class="btn btn-lg btn-primary">Book Tickets</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -301,95 +298,232 @@
                 <header class="section-header align-center">
                     <div class="row">
                         <div class="col-md-6 block-center">
-                            <h2 class="section-title">Our <span>Schedule</span></h2>
+                            <h2 class="section-title">Our <span>Hikes</span></h2>
                             <p>For the time being, we are operating hikes every Sunday with a rotating location cycle. This means a different trail every Sunday. We will open up more days as demand grows. Please book your hike in advance, and request your top trails.</p>
                         </div>
                     </div>
                 </header>
                 <!--|End Section Header|-->
-
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <!--|Pricing Table|-->
+                    <div class="col-md-4 col-sm-12" id="hike-1">
                         <div class="pricing-table">
-                            <div class="pricing-header">
-                                <p class="plan-name">Last Week</p>
-                                <p class="price"><span class="currency-symbol">$</span><span id="last-week-cost"></span> <span class="duration">/person</span></p>
+                            <div class="hike-name">
                             </div>
                             <div class="pricing-features">
-                                <ul id="last-week">
-                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
-                                    <li><b>Date: </b> <span class="hike-date"></span></li>
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
                                     <li><b>Time: </b> <span class="hike-time"></span></li>
                                     <li><b>Distance: </b> <span class="hike-miles"></span></li>
-                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
-                                    <li><b>Difficulty: </b><span class="hike-difficulty"></span>/10</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-                                <a class="btn btn-default" href="#">Expired</a>
-                            </div>
-                        </div>
-                        <!--|Pricing Table|-->
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <!--|Pricing Table|-->
-                        <div class="pricing-table highlight">
-                            <div class="pricing-header">
-                                <p class="plan-name">This Week</p>
-                                <p class="price"><span class="currency-symbol">$</span><span id="this-week-cost"></span> <span class="duration">/person</span></p>
-                            </div>
-                            <div class="pricing-features">
-                                <ul id="this-week">
-                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
-                                    <li><b>Date: </b> <span class="hike-date"></span></li>
-                                    <li><b>Time: </b> <span class="hike-time"></span></li>
-                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
-                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
-                                    <li><b>Difficulty: </b><span class="hike-difficulty"></span>/10</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input id="this-week-paypal-id" type="hidden" name="hosted_button_id" value="">
-                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
-                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                                </form>
-                            </div>
-                        </div>
-                        <!--|Pricing Table|-->
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <!--|Pricing Table|-->
-                        <div class="pricing-table">
-                            <div class="pricing-header">
-                                <p class="plan-name">Next Week</p>
-                                <p class="price"><span class="currency-symbol">$</span><span id="next-week-cost"></span> <span class="duration">/person</span></p>
-                            </div>
-                            <div class="pricing-features">
-                                <ul id="next-week">
-                                    <li><b>Hike: </b> <span class="hike-name"></span></li>
-                                    <li><b>Date: </b> <span class="hike-date"></span></li>
-                                    <li><b>Time: </b> <span class="hike-time"></span></li>
-                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
-                                    <li><b>Length: </b> <span class="hike-hours"></span></li>
-                                    <li><b>Difficulty: </b><span class="hike-difficulty"></span>/10</li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
                                 </ul>
                             </div>
                             <div class="pricing-footer">
                                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                     <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input id="next-week-paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
                                     <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
                                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                                 </form>
                             </div>
                         </div>
-                        <!--|Pricing Table|-->
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-2">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-3">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" id="hike-4">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-5">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-6">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" id="hike-7">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-8">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" id="hike-9">
+                        <div class="pricing-table">
+                            <div class="hike-name">
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><b>Price: </b> $<span class="hike-price"></span></li>
+                                    <li><b>Time: </b> <span class="hike-time"></span></li>
+                                    <li><b>Distance: </b> <span class="hike-miles"></span></li>
+                                    <li><b>Location: </b> <span class="hike-location"></span></li>
+                                    <li><b>Elevation: </b><span class="hike-elevation"></span></li>
+                                    <li><b>Difficulty: </b> <span class="hike-difficulty"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input class="paypal-id" type="hidden" name="hosted_button_id" value="">
+                                    <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-primary" value="Book Tickets">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
